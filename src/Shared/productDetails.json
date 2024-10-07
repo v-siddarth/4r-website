@@ -1,0 +1,106 @@
+{
+  "productDetails": [
+    {
+      "label": "Listing Title",
+      "name": "listingTitle",
+      "fieldType": "text",
+      "required": true,
+      "column": 2,
+      "icon": "FaClipboardList"
+    },
+    {
+      "label": "Tagline",
+      "name": "tagline",
+      "fieldType": "text",
+      "column": 2,
+      "icon": "FaTag"
+    },
+    {
+      "label": "Original Price",
+      "name": "originalPrice",
+      "fieldType": "text",
+      "column": 1,
+      "icon": "FaDollarSign"
+    },
+    {
+      "label": "Selling Price",
+      "name": "sellingPrice",
+      "fieldType": "text",
+      "required": true,
+      "column": 1,
+      "icon": "FaMoneyBillAlt"
+    },
+    {
+      "label": "Category",
+      "name": "category",
+      "fieldType": "dropdown",
+      "options": ["Electronics", "Furniture", "Clothing", "Books", "Toys", "Tools", "Home Appliances", "Gardening", "Others"],
+      "required": true,
+      "column": 1,
+      "icon": "FaBoxes"
+    },
+    {
+      "label": "Condition",
+      "name": "condition",
+      "fieldType": "dropdown",
+      "required": true,
+      "options": ["New", "Used", "Refurbished"],
+      "column": 1,
+      "icon": "FaCheckCircle"
+    },
+    {
+      "label": "Brand",
+      "name": "brand",
+      "fieldType": "text",
+      "column": 1,
+      "icon": "FaIndustry"
+    },
+    {
+      "label": "Dimensions",
+      "name": "dimensions",
+      "fieldType": "text",
+      "column": 1,
+      "icon": "FaRuler"
+    },
+    {
+      "label": "Material",
+      "name": "material",
+      "fieldType": "text",
+      "column": 1,
+      "icon": "FaCogs"
+    },
+    {
+      "label": "Weight",
+      "name": "weight",
+      "fieldType": "text",
+      "column": 1,
+      "icon": "FaWeight"
+    },
+    {
+      "label": "Color",
+      "name": "color",
+      "fieldType": "dropdown",
+      "required": true,
+      "options": ["Black", "Blue", "Brown", "Green", "Red", "White", "Yellow"],
+      "column": 2,
+      "icon": "FaPalette"
+    },
+    {
+      "label": "Offer Type",
+      "name": "offerType",
+      "fieldType": "dropdown",
+      "options": ["Buy", "Sell", "Hot Offer", "Urgent"],
+      "column": 2,
+      "icon": "FaTags"
+    },
+    {
+      "label": "Listing Description",
+      "name": "listingDescription",
+      "fieldType": "textarea",
+      "required": true,
+      "column": 2,
+      "icon": "FaFileAlt"
+    }
+  ]
+}
+

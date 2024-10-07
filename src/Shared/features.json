@@ -1,0 +1,129 @@
+{
+  "features": [
+    {
+      "label": "Eco-Friendly Packaging",
+      "name": "ecoFriendlyPackaging",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Recycled Materials",
+      "name": "recycledMaterials",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Energy Efficient",
+      "name": "energyEfficient",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Durable Design",
+      "name": "durableDesign",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Minimalist Design",
+      "name": "minimalistDesign",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Biodegradable",
+      "name": "biodegradable",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Compact Size",
+      "name": "compactSize",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Versatile Use",
+      "name": "versatileUse",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "High Quality",
+      "name": "highQuality",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Customizable",
+      "name": "customizable",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Warranty Available",
+      "name": "warrantyAvailable",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Free Shipping",
+      "name": "freeShipping",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Customer Support",
+      "name": "customerSupport",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Limited Edition",
+      "name": "limitedEdition",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Gift Packaging",
+      "name": "giftPackaging",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Premium Quality",
+      "name": "premiumQuality",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Organic",
+      "name": "organic",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Handmade",
+      "name": "handmade",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Certified Product",
+      "name": "certifiedProduct",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Portable",
+      "name": "portable",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Water Resistant",
+      "name": "waterResistant",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Scratch Resistant",
+      "name": "scratchResistant",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Anti-Bacterial",
+      "name": "antiBacterial",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "UV Protection",
+      "name": "uvProtection",
+      "fieldType": "checkbox"
+    },
+    {
+      "label": "Rechargeable",
+      "name": "rechargeable",
+      "fieldType": "checkbox"
+    }
+  ]
+}
