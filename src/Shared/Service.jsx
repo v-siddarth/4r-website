@@ -74,6 +74,7 @@ export const SendOfferMessage = async (channelUrl, message) => {
             console.error('Error sending offer message:', error);
             return;
           }
+          
           console.log('Offer message sent:', message);
         });
       });

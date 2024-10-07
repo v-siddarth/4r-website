@@ -66,7 +66,7 @@ function SearchByCategory() {
                                             <h2>{listing?.tagline || 'No Tagline'}</h2>
                                         </div>
                                         <div className="flex flex-col items-center">
-                                            <h2>Selling: ${listing?.sellingPrice || 'N/A'}</h2>
+                                            <h2>Selling: ₹{listing?.sellingPrice || 'N/A'}</h2>
                                         </div>
                                         <div className="flex flex-col items-center">
                                             <h2>Category: {listing?.category || 'N/A'}</h2>
@@ -76,7 +76,7 @@ function SearchByCategory() {
                                     {/* Price */}
                                     <div className="flex items-center justify-between mt-4">
                                         <h2 className="font-bold text-xl">
-                                            ${listing?.sellingPrice || 'N/A'}
+                                        ₹{listing?.sellingPrice || 'N/A'}
                                         </h2>
                                     </div>
                                 </div>

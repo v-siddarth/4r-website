@@ -68,7 +68,7 @@ function SearchByOptions() {
                                             </div>
                                             <div className='flex flex-col items-center'>
                                                 <FaDollarSign className='text-lg mb-2' />
-                                                <h2>Selling: ${listing?.sellingPrice || 'N/A'}</h2>
+                                                <h2>Selling: ₹{listing?.sellingPrice || 'N/A'}</h2>
                                             </div>
                                             <div className='flex flex-col items-center'>
                                                 <FaBoxes className='text-lg mb-2' />
@@ -77,7 +77,7 @@ function SearchByOptions() {
                                         </div>
                                         <Separator className="my-2" />
                                         <div className='flex items-center justify-between'>
-                                            <h2 className='font-bold text-xl'>${listing?.sellingPrice || 'N/A'}</h2>
+                                            <h2 className='font-bold text-xl'>₹{listing?.sellingPrice || 'N/A'}</h2>
                                             <h2 className='text-primary text-sm flex gap-2 items-center'>
                                                 View Details
                                             </h2>

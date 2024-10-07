@@ -1,10 +1,8 @@
 import Header from '@/components/Header'
-import { Button } from '@/components/ui/button'
-import React from 'react'
-import { Link } from 'react-router-dom'
 import MyListing from './components/MyListing'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import Inbox from './components/Inbox'
+import Offers from './components/Offers'
 
 function Profile() {
   return (
@@ -15,14 +13,14 @@ function Profile() {
         <TabsList className="w-full flex justify-start">
           <TabsTrigger value="my-listing">My Listing</TabsTrigger>
           <TabsTrigger value="inbox">Inbox</TabsTrigger>
-          {/* <TabsTrigger value="profile">Profile</TabsTrigger> */}
+          <TabsTrigger value="profile">Offers</TabsTrigger>
 
         </TabsList>
         <TabsContent value="my-listing" >
         <MyListing/>
         </TabsContent>
         <TabsContent value="inbox"><Inbox/></TabsContent>
-        <TabsContent value="profile">Profile Tab</TabsContent>
+        <TabsContent value="profile"><Offers/></TabsContent>
 
       </Tabs>
 
