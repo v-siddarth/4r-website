@@ -1,13 +1,13 @@
 import React from 'react';
 
-function ImageGallery({ carDetail }) {
-  if (!carDetail?.images || carDetail.images.length === 0) {
+function ImageGallery({ wasteDetails }) {
+  if (!wasteDetails?.images || wasteDetails.images.length === 0) {
     return <div>No images available.</div>;
   }
 
   return (
     <div className='flex flex-wrap gap-4'>
-      {carDetail?.images.map((imageUrl, index) => (
+      {wasteDetails?.images.map((imageUrl, index) => (
         <img
           key={index}
           src={imageUrl}

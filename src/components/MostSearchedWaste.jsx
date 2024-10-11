@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { Separator } from './ui/separator';
 import { FaTag, FaDollarSign, FaBoxes } from "react-icons/fa";
 // import { MdOpenInNew } from "react-icons/md";
-import CarItem from './CarItem';
+
 import { Link } from 'react-router-dom';
 import {
     Carousel,
@@ -16,17 +16,17 @@ import { db } from '../../configs/firebaseConfig'; // Import Firebase configurat
 import { collection, query, orderBy, limit, getDocs, doc } from 'firebase/firestore';
 
 function MostSearchedWaste() {
-    const [carList, setCarList] = useState([]);
+    const [wasteList, setwasteList] = useState([]);
 
     useEffect(() => {
-        GetPopularCarList();
+        GetPopularwasteList();
     }, []);
 
-    const GetPopularCarList = async () => {
+    const GetPopularwasteList = async () => {
         const listingCollectionRef= collection(db, 'listings');
         const data = await getDocs(listingCollectionRef);
         console.log("Fetched Data: ", data); 
-        setCarList(data.docs.map((doc) => ({...doc.data(),id: doc.id})));
+        setwasteList(data.docs.map((doc) => ({...doc.data(),id: doc.id})));
     };
 
     return (
@@ -34,7 +34,7 @@ function MostSearchedWaste() {
           <h2 className='font-bold text-3xl text-center mt-16 mb-7'>Most Searched Products</h2>
           <Carousel>
               <CarouselContent>
-                  {carList.map((listing, index) => (
+                  {wasteList.map((listing, index) => (
                       <CarouselItem key={index} className="basis-1/2 md:basis-1/3 lg:basis-1/4">
                       <Link to={'/listing-details/' + listing?.id}>
                 <div className='rounded-xl bg-white border hover:shadow-md cursor-pointer relative'>

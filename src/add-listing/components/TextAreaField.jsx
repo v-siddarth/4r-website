@@ -1,12 +1,12 @@
 import React from 'react'
 import { Textarea } from "@/components/ui/textarea"
 
-function TextAreaField({item,handleInputChange,carInfo}) {
+function TextAreaField({item,handleInputChange,wasteInfo}) {
   return (
     <div>
       <Textarea  onChange={(e)=>handleInputChange(item.name,e.target.value)}
       required={item.required}
-      defaultValue={carInfo?.[item.name]}
+      defaultValue={wasteInfo?.[item.name]}
       />
     </div>
   )

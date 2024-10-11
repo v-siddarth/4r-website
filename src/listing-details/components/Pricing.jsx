@@ -7,7 +7,7 @@ import { db } from './../../../configs/firebaseConfig'; // Ensure correct Fireba
 import { collection, addDoc, Timestamp } from 'firebase/firestore'; // Firestore methods
 import { BiLoaderAlt } from "react-icons/bi"; // Import the loading spinner icon
 
-function Pricing({ carDetail }) {
+function Pricing({ wasteDetails }) {
     const [offerPrice, setOfferPrice] = useState(''); // Store the offer price
     const { user } = useUser(); // Clerk user object
     const navigate = useNavigate();
@@ -17,7 +17,7 @@ function Pricing({ carDetail }) {
     const handleMakeOffer = async () => {
         setLoader(true); // Start loading
         const userId = user.primaryEmailAddress.emailAddress.split('@')[0]; // Current user ID
-        const ownerUserId = carDetail?.createdBy.split('@')[0]; // Owner ID from the listing
+        const ownerUserId = wasteDetails?.createdBy.split('@')[0]; // Owner ID from the listing
 
         try {
             // Step 1: Add offer data to the "offers" collection in Firebase
@@ -44,7 +44,7 @@ function Pricing({ carDetail }) {
     return (
         <div className='p-10 rounded-xl border shadow-md'>
             <h2>Our Price</h2>
-            <h2 className='font-bold text-4xl'>₹{carDetail?.sellingPrice}</h2>
+            <h2 className='font-bold text-4xl'>₹{wasteDetails?.sellingPrice}</h2>
 
             {/* Input field for entering the offer price */}
             <input

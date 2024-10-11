@@ -17,7 +17,7 @@ import MostSearchedWaste from '@/components/MostSearchedWaste';
 
 function ListingDetail() {
     const { id } = useParams(); // Get listing ID from URL params
-    const [carDetail, setCarDetail] = useState(null); // Store listing details
+    const [wasteDetails, setwasteDetails] = useState(null); // Store listing details
 
     useEffect(() => {
         getListingDetails(); // Fetch listing details when component mounts
@@ -29,7 +29,7 @@ function ListingDetail() {
             const listingDoc = await getDoc(listingDocRef); // Fetch document
 
             if (listingDoc.exists()) {
-                setCarDetail(listingDoc.data()); // Set carDetail with fetched data
+                setwasteDetails(listingDoc.data()); // Set wasteDetails with fetched data
             } else {
                 console.log('No such document!');
             }
@@ -44,34 +44,34 @@ function ListingDetail() {
 
             <div className='p-10 md:px-20'>
                 {/* Header Detail Component */}
-                <DetailHeader carDetail={carDetail} />
+                <DetailHeader wasteDetails={wasteDetails} />
 
                 <div className='grid grid-cols-1 md:grid-cols-3 w-full mt-10 gap-5'>
                     {/* Left Section */}
                     <div className='md:col-span-2 '>
                         {/* Image Gallery */}
-                        <ImageGallery carDetail={carDetail} />
+                        <ImageGallery wasteDetails={wasteDetails} />
 
                         {/* Description */}
-                        <Description carDetail={carDetail} />
+                        <Description wasteDetails={wasteDetails} />
 
                         {/* Features List */}
-                        <Features features={carDetail?.features} />
+                        <Features features={wasteDetails?.features} />
 
                         {/* Address Component */}
-                        <AddressComponent address={carDetail?.address} /> {/* Pass only the 'address' field */}
+                        <AddressComponent address={wasteDetails?.address} /> {/* Pass only the 'address' field */}
                     </div>
 
                     {/* Right Section */}
                     <div>
                         {/* Pricing */}
-                        <Pricing carDetail={carDetail} />
+                        <Pricing wasteDetails={wasteDetails} />
 
                         {/* Car Specification */}
-                        <Specification carDetail={carDetail} />
+                        <Specification wasteDetails={wasteDetails} />
 
                         {/* Owners Details */}
-                        <OwnersDetail carDetail={carDetail} />
+                        <OwnersDetail wasteDetails={wasteDetails} />
                     </div>
                 </div>
 

@@ -9,15 +9,15 @@ import {
     SelectValue,
   } from "@/components/ui/select"
 
-function DropdownField({item,handleInputChange,carInfo}) {
+function DropdownField({item,handleInputChange,wasteInfo}) {
   return (
     <div>
         <Select onValueChange={(value)=>handleInputChange(item.name,value)}
         required={item.required}
-        defaultValue={carInfo?.[item?.name]}
+        defaultValue={wasteInfo?.[item?.name]}
         >
         <SelectTrigger className="w-full">
-            <SelectValue placeholder={carInfo?.[item?.name]?carInfo?.[item?.name]:item.label} />
+            <SelectValue placeholder={wasteInfo?.[item?.name]?wasteInfo?.[item?.name]:item.label} />
         </SelectTrigger>
         <SelectContent>
             {item?.options?.map((option,index)=>(
